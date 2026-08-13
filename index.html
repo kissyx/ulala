@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С Днём Рождения, Вика! 💜</title>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <audio id="music" loop>
+    <source src="dynamite.mp3.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="splash" id="splash">
+    <div class="splash-content">
+      <div class="splash-logo">💜</div>
+      <h1 class="splash-title">Вика!</h1>
+      <p class="splash-sub">У тебя есть подарок...</p>
+      <button class="splash-btn" onclick="startSite()">Открыть 🎁</button>
+    </div>
+  </div>
+
+  <div class="warning-bar">
+    💜 ВИКА, Я ЗНАЮ ЧТО ТЫ ЛЮБИШЬ BTS 💜 ARMY FOREVER 💜 BTS 방탄소년단 💜
+  </div>
+
+  <section class="hero">
+    <div class="bts-logo">BTS</div>
+    <div class="subtitle">방탄소년단</div>
+    <div class="birthday-text">С Днём Рождения,</div>
+    <div class="birthday-text"><span class="name-highlight">Вика! 🎂</span></div>
+    <div class="emoji-row">💜 🎵 💜 🎵 💜</div>
+    <button class="mute-btn" onclick="tryMute()">🔇 Выключить музыку</button>
+  </section>
+
+  <section class="wishes-section">
+    <h2>Пожелания 💜</h2>
+    <div class="wishes-card">
+
+      <div class="wish-photo-placeholder">
+        <img src="bf.jpg" alt="Фото" class="wish-photo">
+      </div>
+
+      <div class="wish-text">
+        <p>Вика, поздравляю тебя с днём рождения. Помню когда ты была мелким, вредным дрыщем (ты всё такая же). Но ты типа крутая сестра — то в волейбол, то на фильмы, то просто тусим. Мне нравится тебя буллить и слышать как ты ноешь от злости 😄 Но на самом деле — желаю всего хорошего, минибро. Денег много, здоровья крепкого, шоб Катюшу слушала! 💜</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="photos-section">
+    <h2>Твои любимые 💜</h2>
+    <div class="photos-grid" id="photosGrid"></div>
+  </section>
+
+  <div class="footer">
+    <p>Сделано с <span class="heart">💜</span> специально для Вики</p>
+    <p class="footer-sub">BTS любит тебя 방탄소년단</p>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h3 id="popupTitle">💜</h3>
+      <p id="popupText"></p>
+      <button class="popup-btn" onclick="closePopup()">УРА!!!!</button>
+    </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
